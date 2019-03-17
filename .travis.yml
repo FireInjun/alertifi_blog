@@ -1,0 +1,10 @@
+dist: trusty
+sudo: true
+language: node_js
+cache: npm
+branches:
+  only:
+    deploy
+    master
+before_script:
+  sudo apt-get

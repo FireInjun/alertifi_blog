@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/fireinjun/alertifi_blog/issues"
   },
   "dependencies": {
     "gatsby": "^2.1.18",
@@ -36,7 +36,22 @@
     "typography-theme-wordpress-2016": "^0.16.18"
   },
   "devDependencies": {
-    "prettier": "^1.16.4"
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.5.0",
+    "babel-preset-gatsby": "^0.1.9",
+    "concurrently": "^4.1.0",
+    "eslint": "^5.15.2",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^1.3.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.5.0",
+    "lint-staged": "^8.1.5",
+    "react-test-renderer": "^16.8.4"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
@@ -46,14 +61,18 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/fireinjun/alertifi_blog.git"
   },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
+    "format": "eslint . --fix",
+    "lint": "eslint .",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "install": "npm install && clear && echo \"It's Gatsby time!\"",
+    "preinstall": "git add . && git commit -m 'Installing new dependency'",
+    "postinstall": "clear && npm run develop"
   }
 }
