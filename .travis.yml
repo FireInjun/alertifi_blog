@@ -7,4 +7,4 @@ branches:
     deploy
     master
 before_script:
-  sudo apt-get
+  sudo chmod +x ./scripts/travis-before-script.sh 

@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "alertifi_blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "A log of my experiences in labs",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Mykeal Kenny <mk@fireinjun.com>",
   "bugs": {
     "url": "https://github.com/fireinjun/alertifi_blog/issues"
   },
@@ -40,6 +40,7 @@
     "babel-jest": "^24.5.0",
     "babel-preset-gatsby": "^0.1.9",
     "concurrently": "^4.1.0",
+    "coveralls": "^3.0.3",
     "eslint": "^5.15.2",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.16.0",
@@ -53,7 +54,7 @@
     "lint-staged": "^8.1.5",
     "react-test-renderer": "^16.8.4"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://alertifi.mykekenny.com/",
   "keywords": [
     "gatsby"
   ],
@@ -66,13 +67,11 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "eslint . --fix",
+    "format": "eslint *.js --fix",
     "lint": "eslint .",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "install": "npm install && clear && echo \"It's Gatsby time!\"",
-    "preinstall": "git add . && git commit -m 'Installing new dependency'",
     "postinstall": "clear && npm run develop"
   }
 }
