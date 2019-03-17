@@ -39,6 +39,7 @@
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.5.0",
     "babel-preset-gatsby": "^0.1.9",
+    "concurrently": "^4.1.0",
     "eslint": "^5.15.2",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.16.0",
@@ -69,6 +70,9 @@
     "lint": "eslint .",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "install": "npm install && clear && echo \"It's Gatsby time!\"",
+    "preinstall": "git add . && git commit -m 'Installing new dependency'",
+    "postinstall": "clear && npm run develop"
   }
 }
