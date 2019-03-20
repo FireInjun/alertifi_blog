@@ -14,14 +14,14 @@ module.exports = {
         arrays: 'only-multiline',
         imports: 'never',
         exports: 'never',
-        functions: 'never',
-      },
+        functions: 'never'
+      }
     ],
 
     // options to emulate prettier setup
-    semi: ['error', 'never'],
-    'max-len': ['error', { 'code': 90, 'ignoreStrings': true }],
-    'template-curly-spacing': ['error', 'always'],
+    semi: [0],
+    'max-len': ['error', { code: 90, ignoreStrings: true }],
+    'template-curly-spacing': [0],
     'arrow-parens': ['error', 'as-needed'],
 
     // standard.js
@@ -30,8 +30,8 @@ module.exports = {
       {
         named: 'always',
         anonymous: 'always',
-        asyncArrow: 'always',
-      },
+        asyncArrow: 'always'
+      }
     ],
 
     // standard plugin - options
@@ -42,10 +42,10 @@ module.exports = {
 
     // react plugin - options
     'react/jsx-uses-react': 'error',
-    'react/jsx-uses-vars': 'error',
+    'react/jsx-uses-vars': 'error'
   },
   parser: 'babel-eslint',
   parserOptions: {
-    ecmaVersion: 8, // optional, recommended 6+
-  },
-}
+    ecmaVersion: 8 // optional, recommended 6+
+  }
+};

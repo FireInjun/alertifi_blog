@@ -8,6 +8,7 @@ lint-staged.config.js
 .eslintignore
 package-lock.json
 package.json
-/node_modules/**
-/.cache/**
-/public/**
+**/node_modules
+**/.cache
+**/public
+*.min
