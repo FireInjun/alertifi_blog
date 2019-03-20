@@ -65,13 +65,14 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "eslint . --fix",
+    "clean": "gatsby clean",
+    "develop": "gatsby clean && gatsby develop",
+    "format": "gatsby clean && eslint --fix \"src/**/*.js\"",
     "lint": "eslint .",
-    "start": "npm run develop",
+    "start": "gatsby develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "install": "npm install && clear && echo \"It's Gatsby time!\"",
+    "install": "npm install && clear && gatsby develop",
     "preinstall": "git add . && git commit -m 'Installing new dependency'",
     "postinstall": "clear && npm run develop"
   }
