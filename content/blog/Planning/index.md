@@ -1,9 +1,9 @@
 ---
 title: Planning
-date: "2019-03-10"
+date: '2019-03-10'
 ---
 
-This is my first post on my new fake blog! How exciting!
+I think I should start this project blog with a little introduction.
 
 I'm sure I'll write a lot more interesting things in the future.
 
